@@ -1,3 +1,4 @@
+alert("Hello Guys");
 var GameData = function()
 {
 };
