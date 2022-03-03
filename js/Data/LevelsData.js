@@ -1,3 +1,4 @@
+alert("Hello Guys");
 var PRICE_GAME_CLEARED   = 10;
 var PRICE_BOOSTER_HAMMER = 50;
 var PRICE_BOOSTER_FWD    = 10;
