@@ -100,10 +100,9 @@ SceneMenu.prototype = {
 
     OnPressedPlay: function()
     {
-        window.location.href = "skidoswebview://PuzzlePieces-Test1?test=test";
+        window.location.href = "skidoswebview://PuzzlePieces-Test2?test=test";
         soundManager.playMusic('hudba_loop');
         soundManager.playSound('button');
-
         SceneMenu.instance.HideAnimated();
         SceneLevelSelection.instance.ShowAnimated();
         //SceneGame.instance.RestartGame();
