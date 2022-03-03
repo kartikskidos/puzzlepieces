@@ -1,4 +1,4 @@
-alert("Hello Guys");
+// alert("Hello Guys");
 var GameData = function()
 {
 };
