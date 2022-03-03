@@ -100,7 +100,7 @@ SceneMenu.prototype = {
 
     OnPressedPlay: function()
     {
-        window.location.href = "skidoswebview://PuzzlePieces?test=test";
+        window.location.href = "skidoswebview://PuzzlePieces-Test1?test=test";
         soundManager.playMusic('hudba_loop');
         soundManager.playSound('button');
 
