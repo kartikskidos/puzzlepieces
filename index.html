@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+
+    <!--PPS_DELETE-YANDEX-->
+    <meta name="viewport" content="user-scalable=no">
+    <!--PPS_DELETE-YANDEX-->
+    <!--PPS_USE-YANDEX-->
+    <!--
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    PPS_USE-YANDEX
+    -->
+
+    <title>Puzzle Pieces</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/game.css">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="icon" type="image/png" href="assets/favicon/icon-36x36.png" sizes="36x36">
+    <link rel="icon" type="image/png" href="assets/favicon/icon-48x48.png" sizes="48x48">
+    <link rel="icon" type="image/png" href="assets/favicon/icon-72x72.png" sizes="72x72">
+    <link rel="icon" type="image/png" href="assets/favicon/icon-512x512.png" sizes="512x512">
+
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-36x36.png" sizes="36x36">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-48x48.png" sizes="48x48">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-512x512.png" sizes="512x512">
+
+    <!--PPS_USE-CLOUDGAMES-->
+    <!--
+    <script type="text/javascript" src="//wanted5games.com/js/game.js" ></script>
+    PPS_USE-CLOUDGAMES
+    -->
+
+    <!--PPS_USE-GAMEPIX-->
+    <!--
+    <script src="https://integration.gamepix.com/sdk/v3/gamepix.sdk.js"></script>
+    PPS_USE-GAMEPIX
+    -->
+
+    <!--PPS_USE-MOOSITE-->
+    <!--
+    <script>
+        var mpConfig = {
+            "game": "puzzle-pieces",
+            "partner": "inlogic"
+        };
+    </script>
+    <script src="https://ext.minijuegosgratis.com/external-host/main.js"></script>
+    PPS_USE-MOOSITE
+    -->
+
+    <!--PPS_USE-YANDEX-->
+    <!--
+    <script src="https://yandex.ru/games/sdk/v2"></script>
+    <link rel= "manifest" href= " yandex-manifest.json">
+    PPS_USE-YANDEX
+    -->
+
+    <!--PPS_USE-ARKADIUM-->
+    <!--
+    <script src="js/arena-api-1.2.3.js"></script>
+    PPS_USE-ARKADIUM
+    -->
+
+</head>
+<body style="background-color: #000000">
+
+    <!--PPS_USE-CLOUDGAMES-->
+    <!--
+    <script type="text/javascript">
+        CloudAPI.init({
+            'id' : 1038,
+            'splash' : false
+        });
+        CloudAPI.mute = function () {
+            if (game && game.sound) {game.sound.mute = true;}
+            return true;
+        };
+        CloudAPI.unmute = function () {
+            if (game && game.sound) { game.sound.mute = false; game.paused = false;}
+            return true;
+        };
+
+        function cldapi_play() {
+            CloudAPI.play();
+        }
+
+        function cldapi_gameOver() {
+            CloudAPI.gameOver();
+        }
+
+    </script>
+    PPS_USE-CLOUDGAMES
+    -->
+
+    <!--PPS_USE-GAMELOFT-->
+    <!--
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K74X66" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>dataLayer = [];
+
+    var game_publisher = 'Inlogic Games';
+    var productKey = 'puzzlePieces';
+
+    dataLayer.push({
+        'event': 'pageLoad',
+        'publisher': game_publisher,
+        'productKey': productKey
+    });
+
+    function gameloft_levelStart() {
+        dataLayer.push({
+            'event': 'levelStart',
+            'publisher': game_publisher,
+            'productKey': productKey
+        });
+    }
+    function gameloft_levelComplete() {
+        dataLayer.push({
+            'event': 'levelCompletion',
+            'publisher': game_publisher,
+            'productKey': productKey
+        });
+    }
+    </script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K74X66');</script>
+    PPS_USE-GAMELOFT
+    -->
+
+    <div id="wrongRotation">
+        <img src="assets/img/rotate_screen.png" alt=""/>
+    </div>
+
+    <div id="game">
+        <!--PPS_USE-ADINPLAY-->
+        <!--
+        <script async src="//api.adinplay.com/libs/aiptag/pub/ISK/inlogic.sk/tag.min.js"></script>
+        PPS_USE-ADINPLAY
+        -->
+
+        <!--PPS_DELETE-BUILD-->
+        <script src="js/phaser.js"></script>
+        <script src="js/screenfull.min.js"></script>
+        <!-- script src="js/phaser-debug.js"></script-->
+
+        <script src="js/Data/LevelsData.js"></script>
+        <script src="js/Helpers/AdInPlay.js"></script>
+        <script src="js/Helpers/SoundManager.js"></script>
+        <script src="js/Objects/Particles.js"></script>
+        <script src="js/Objects/TextParticles.js"></script>
+        <script src="js/Data/Languages.js"></script>
+        <script src="js/Data/Resolutions.js"></script>
+        <script src="js/Helpers/Defines.js"></script>
+        <script src="js/Data/AssetsLoader.js"></script>
+        <script src="js/States/SplashState.js"></script>
+        <script src="js/States/PreloadState.js"></script>
+        <script src="js/Data/GameData.js"></script>
+        <script src="js/Helpers/Buttons.js"></script>
+        <script src="js/Scenes/ScenesTransitions.js"></script>
+        <script src="js/Scenes/SceneMenu.js"></script>
+        <script src="js/Scenes/SceneLevelSelection.js"></script>
+        <script src="js/Scenes/SceneGame.js"></script>
+        <script src="js/Scenes/SceneOverlay.js"></script>
+        <script src="js/Scenes/SceneLevelDescription.js"></script>
+        <script src="js/Scenes/SceneGems.js"></script>
+        <script src="js/Scenes/SceneLanguages.js"></script>
+        <script src="js/Scenes/SceneInstructions.js"></script>
+        <script src="js/Scenes/SceneGameFailed.js"></script>
+        <script src="js/Scenes/SceneGameCleared.js"></script>
+        <script src="js/Scenes/ScenePause.js"></script>
+        <script src="js/Scenes/SceneTopUI.js"></script>
+        <script src="js/States/GameState.js"></script>
+        <script src="js/Helpers/HTMLcontrol.js"></script>
+        <script src="js/main.js"></script>
+
+        <!--script src="js/Helpers/ScreenConsole.js"></script-->
+        <!--PPS_DELETE-BUILD-->
+
+        <!--PPS_USE-BUILD-->
+        <!--
+        <-<srcFls>->
+        PPS_USE-BUILD
+        -->
+    </div>
+    <div id="ads"></div>
+
+    <div class="font_preload" style="opacity: 0">
+        <span style="font-family: 'gameFont', 'Arial', normal;"></span>
+    </div>
+
+</body>
+</html>

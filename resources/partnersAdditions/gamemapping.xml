@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gamemapping title="Puzzle Pieces" idstitle="puzzlepieces-html5"
+	version="1.0" game-version="1.0.0" revision-date="10.05.2021"
+	release-date="10.05.2021" html5="true">
+
+	<languages>
+		<supported>en</supported>
+		<supported>de</supported>
+		<supported>es</supported>
+		<supported>fr</supported>
+		<supported>it</supported>
+        <supported>br</supported>
+        <supported>ru</supported>
+	</languages>
+
+</gamemapping>

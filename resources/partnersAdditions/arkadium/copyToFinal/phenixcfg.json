@@ -1,0 +1,32 @@
+{
+  "version":"1.0",
+  "main": "main.min.js",
+  "slug": "puzzle-pieces",
+  "sdkName": "PuzzlePieces",
+  "releaseTime": "",
+  "settings": {
+    "thumbPath": "assets/thumbs/puzzlepieces-html5_thumbPath_600x600.png",
+    "secondaryThumbPath": "assets/thumbs/puzzlepieces-html5_secondaryThumbPath_600x277.png",
+    "screenshotPath": "assets/thumbs/puzzlepieces-html5_screenshotPath_768x1024.png",
+    "promoThumbPath": "assets/thumbs/puzzlepieces-html5_promoThumbPath_1080x400.png",
+    "squareIcon76": "assets/favicon/icon-76x76.png",
+    "squareIcon120": "assets/favicon/icon-120x120.png",
+    "squareIcon152": "assets/favicon/icon-152x152.png",
+    "squareIcon167": "assets/favicon/icon-167x167.png",
+    "squareIcon180": "assets/favicon/icon-180x180.png",
+    "squareIcon192": "assets/favicon/icon-192x192.png",
+    "squareIcon512": "assets/favicon/icon-512x512.png"
+  },
+  "locales": [
+    {
+      "name": "en",
+      "settings": {
+        "name": "Puzzle Pieces",
+        "description": "Fill circles in this thrilling puzzle game. Earn score, create multicolored circles or finish the level before time ends. Explore all of 60 levels in 6 different game modes. Do you have what it takes to complete all of them?",
+        "tags": [
+          "puzzle"
+        ]
+      }
+    }
+  ]
+}

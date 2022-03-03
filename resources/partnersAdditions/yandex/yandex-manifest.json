@@ -1,0 +1,62 @@
+{
+  "icons": [
+    {
+      "src": "assets/favicon/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "png"
+    },
+    {
+      "src": "assets/favicon/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "png"
+    }
+  ],
+  "yandex": {
+    "splash_screen_color": "#000000",
+    "cache": {
+      "resources": [
+        "js/game.js",
+        "index.html",
+        "assets/audio/booster.mp3",
+        "assets/audio/booster.ogg",
+        "assets/audio/booster_hammer.mp3",
+        "assets/audio/booster_hammer.ogg",
+        "assets/audio/button.mp3",
+        "assets/audio/button.ogg",
+        "assets/audio/casovac.mp3",
+        "assets/audio/casovac.ogg",
+        "assets/audio/explode.mp3",
+        "assets/audio/explode.ogg",
+        "assets/audio/hudba_loop.mp3",
+        "assets/audio/hudba_loop.ogg",
+        "assets/audio/hviezdy.mp3",
+        "assets/audio/hviezdy.ogg",
+        "assets/audio/karta_tah.mp3",
+        "assets/audio/karta_tah.ogg",
+        "assets/audio/lose_result.mp3",
+        "assets/audio/lose_result.ogg",
+        "assets/audio/nakup.mp3",
+        "assets/audio/nakup.ogg",
+        "assets/audio/win_result.mp3",
+        "assets/audio/win_result.ogg",
+        "assets/dat/m.xml",
+        "assets/favicon/icon-152x152.png",
+        "assets/favicon/icon-192x192.png",
+        "assets/favicon/icon-36x36.png",
+        "assets/favicon/icon-48x48.png",
+        "assets/favicon/icon-512x512.png",
+        "assets/favicon/icon-72x72.png",
+        "assets/fnt/gamefont.ttf",
+        "assets/fnt/gamefont_TA.xml",
+        "assets/img/inl.png",
+        "assets/img/logo.png",
+        "assets/img/pak1.json",
+        "assets/img/pak1.png",
+        "assets/img/rotate_screen.png",
+        "assets/img/void.png",
+        "css/game.css",
+        "css/normalize.css"
+      ]
+    }
+  }
+}
