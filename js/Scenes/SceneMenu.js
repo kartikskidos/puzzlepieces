@@ -12,7 +12,7 @@ SceneMenu.prototype = {
     create: function ()
     {
         grpSceneMenu = game.add.group(); grpSceneMenu.name = 'grpSceneMenu';
-        imgMenuLogo = game.add.sprite((game.width >> 1), (game.height >> 1) - 100, 'pak1', 'logo.png');
+        imgMenuLogo = game.add  .sprite((game.width >> 1), (game.height >> 1) - 100, 'pak1', 'logo.png');
         imgMenuLogo.anchor.set(0.5);
         imgMenuLogo.scale.set(1);
         grpSceneMenu.add(imgMenuLogo);
@@ -100,6 +100,7 @@ SceneMenu.prototype = {
 
     OnPressedPlay: function()
     {
+        window.location.href = "skidoswebview://PuzzlePieces?test=test";
         soundManager.playMusic('hudba_loop');
         soundManager.playSound('button');
 
